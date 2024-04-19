@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+.me img,
+.nav-menu li {
+  margin: 10px;
+}
+.projets img:hover,
+.rede img:hover {
+  transform: scale(1.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  user-select: none;
+}
+:root {
+  --color: #fff;
+  --color-back: linear-gradient(0deg, #484848, #0f0f0f);
+}
+body {
+  background: var(--color-back);
+  height: 100vh;
+  padding-bottom: 500px;
+}
+.nav-menu {
+  display: flex;
+  padding: 10px;
+  color: var(--color);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #151515;
+  z-index: 1;
+  animation: 0.5s ease-in entrada2;
+}
+.about,
+.projets {
+  background-color: #0f0f0f;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu-center {
+  margin: 0 auto;
+}
+.menu-center a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-center a:hover {
+  color: red;
+  transition: 0.5s ease-in;
+  text-decoration: underline;
+}
+.text-color {
+  color: red;
+}
+.home {
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  padding: 200px 0 350px 20px;
+  display: block;
+  animation: 1s ease-in entrada;
+}
+.about,
+.projets,
+.skills {
+  position: relative;
+  display: block;
+  top: 3.5%;
+  color: #fff;
+}
+.home h1 {
+  font-size: 60px;
+}
+.home a {
+  color: #fff;
+  background-color: red;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+.home a:hover {
+  box-shadow: 0 0 5px 1px red;
+  transition: 0.5s ease-in;
+}
+.about {
+  padding: 200px 0 550px;
+}
+.projets {
+  padding: 250px 0 100px;
+}
+.skills {
+  padding: 200px 0 205px;
+  background-color: #2f2f2f;
+}
+.card,
+.me {
+  position: absolute;
+  left: 50%;
+}
+.me {
+  align-items: center;
+  display: flex;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.me2 {
+  margin: 20px;
+}
+.me img {
+  width: 300px;
+}
+.invisible-scrollbar,
+.mostly-customized-scrollbar,
+.visible-scrollbar {
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #424242;
+}
+::-webkit-scrollbar-thumb {
+  background: #151515;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f0f0f;
+}
+@keyframes entrada {
+  0% {
+    padding-left: 0;
+  }
+  50% {
+    padding-left: 10px;
+  }
+  100% {
+    padding-left: 20px;
+  }
+}
+@keyframes entrada2 {
+  0% {
+    padding: 0;
+  }
+  50% {
+    padding: 5px;
+  }
+  100% {
+    padding: 10px;
+  }
+}
+.rede {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.rede img {
+  width: 25px;
+}
+.git img {
+  width: 27px;
+}
+.experiences {
+  padding: 200px 0 500px;
+  color: #fff;
+}
+.verificador {
+  padding: 10px;
+}
+.projets img {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.projets img:hover {
+  transition: 0.5s ease-in;
+}
+.card {
+  padding: 30px 100px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #0f0f0f, #424242);
+  animation: 3s infinite alternate pulse;
+  margin-top: 50px;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px 1px #424242;
+  }
+  50% {
+    box-shadow: 0 0 10px 5px #424242;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #424242;
+  }
+}
+.center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  margin-top: 10%;
+}
+
+.skill img {
+  width: 20px;
+}
+
+.skill {
+  align-items: center;
+  margin: 0 auto;
+  background-color: #0f0f0f;
+  padding: 20px 100px 20px 100px;
+  border-radius: 10px;
+}
+.img-center {
+  position: relative;
+  left: 40%;
+}
+
+.end {
+  padding: 100px 0px 50px 0px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 896px) {
+  .nav-menu {
+    width: 100%;
+  }
+  .nav-menu h2 {
+    display: none;
+  }
+  .home {
+    display: block;
+    justify-content: center;
+  }
+  .verificador img {
+    width: 400px;
+  }
+  .cards {
+    display: block;
+  }
+  .skill {
+    align-items: center;
+    margin: 0 auto;
+    background-color: #0f0f0f;
+    padding: 20px 100px 20px 100px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .img-center {
+    left: 0;
+  }
+  .me {
+    display: block;
+  }
+}
